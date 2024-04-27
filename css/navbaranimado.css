@@ -1,0 +1,53 @@
+*,
+*:before,
+*:after {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+body {
+    background-color: #0a0a0a;
+}
+nav {
+    /* height: 100vh; */ /* donde se hospeda el nav, en el ejem esta en el centro */
+    height: 12vh;
+    width: 70vw;  /* largo del nav */
+    min-width: 600; /* anchura minima del elemento: nav en este caso */
+    display: flex; /* como se muestra el elemento: en block or inline, en este caso en block.
+                      El block lo que hace es que el elemento genera un cuadro de elemento de bloque */
+    align-items: center; /* align-self permite alinear un elemento secundario específico dentro del 
+                            contenedor flexible, mientras que align-items afecta a todos los elementos secundarios.*/
+    justify-content: space-around; /* distribucion horizontal (eje X), con espacios iguales entre si, y que tiene 
+                                      margenes en los elementos izquierdo y derecho. Encambio space-between no tiene 
+                                      margenes en los elementos de las puntas */
+    margin: auto;  /* margenes automaticos del nav en este caso */
+}
+a {
+    position: relative; /* altera la posición de un elemento en relación con su posición normal sin afectar al flujo 
+                           del documento */
+    text-decoration: none;  /* saca el subrayado que tiene el elemento <a> como link */
+    font-family: 'Poppins', sans-serif;
+    color: #a0a0a0;
+    font-size: 18px;
+    letter-spacing: 0.5px;   /* espacion entre cada letra de una palabra */
+    padding: 0 10px;
+}
+a:after {              /* despues */
+    content: "";       /* se usa junto con los pseudoelementos :beforey :afterpara 
+                          generar contenido que se adjunta antes o después de un selector CSS. */
+    position: absolute;    /* position: absolute posiciona un elemento en relación con un ancestro 
+                              posicionado, sacándolo del flujo normal del documento y permitiendo 
+                              una superposición controlada.*/
+    background-color: #ff3c78;
+    height: 3px;    /* altura de la barrita de color, que hace de subrayado de los elementos <a> */
+    width: 0;
+    left: 0;
+    bottom: -10px;    /* a la barrita la enviamos debajo del texto del elemento <a> con poner negativo */
+    transition: 0.3s;  /* el efecto tardara ESO */
+}
+a:hover {
+    color:#ffffff;    /* color cuando pasemos el cursor por encima del elemento <a> */
+}
+a:hover:after {
+    width: 100%;
+} 

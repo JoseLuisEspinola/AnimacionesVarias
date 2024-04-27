@@ -1,0 +1,32 @@
+h2 {
+    width: 100%;
+    animation-name: text;
+    animation-duration: 4s;
+    animation-iteration-count: infinite;
+}
+
+#one {
+    animation-direction: normal;
+}
+
+#two {
+    animation-direction: reverse;
+}
+
+#three {
+    animation-direction: alternate;
+}
+
+#four {
+    animation-direction: alternate-reverse;
+}
+
+@keyframes text {
+    from {
+        margin-left: 60%;
+    }
+
+    to {
+        margin-left: 30%;
+    }
+}

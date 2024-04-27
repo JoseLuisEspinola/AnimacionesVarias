@@ -1,0 +1,13 @@
+.box {
+    animation: slide-in 5s infinite;
+    animation-timing-function: linear;
+}
+
+@keyframes slide-in {
+    from {
+        transform: translateX(120%);
+    }
+    to {
+        transform: translateX(-20%);
+    }
+}

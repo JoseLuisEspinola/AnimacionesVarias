@@ -1,0 +1,20 @@
+.tracking-in-1 {
+	animation: tracking-in-1 1.5s 0.5s infinite;
+    text-align: center;
+    font-size: 40px;
+}
+
+@keyframes tracking-in-1 {
+    0% {
+      letter-spacing: 1em;
+      transform: translateZ(400px) translateY(300px);
+      opacity: 0;
+    }
+    40% {
+      opacity: 0.6;
+    }
+    100% {
+      transform: translateZ(0) translateY(0);
+      opacity: 1;
+    }
+}
