@@ -35,7 +35,7 @@ img {
     box-sizing: border-box;
     position: absolute;
     /* position: relative; */
-    bottom: 157px;
+    bottom: 210px;
     background: rgb(27, 27, 27, 0.2);
     color: white;
     transition: 0.5s;
@@ -63,7 +63,7 @@ span {
 
 .card:hover .intro {
     height: 220px;
-    bottom: 157px;
+    bottom: 280px;
     /* background: black; */
     background: rgb(27, 27, 27, 0.6);
 }
