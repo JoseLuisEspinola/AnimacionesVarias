@@ -1,0 +1,44 @@
+.flex-container {
+    margin: 80px auto;
+    width: 70%;
+    outline: 3px solid;
+    height: 300px;
+
+    display: flex;
+    flex-wrap: wrap;
+    align-content: flex-start;
+    gap: 10px;
+}
+
+.flex-item {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 3em;
+    width: 160px;
+    height: 160px;
+
+    flex-basis: 100px;
+    flex-grow: 1;
+}
+
+.flex1 {
+    background-color: seagreen;
+    z-index: 10;
+}
+
+.flex2 {
+    background-color: purple;
+    position: relative;
+
+}
+
+.flex3 {
+    background-color: rgb(218, 20, 6);
+
+}
+
+.flex4 {
+    background-color: rgb(46, 25, 235);
+
+}
