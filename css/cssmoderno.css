@@ -1,0 +1,23 @@
+*, ::after, ::before {
+    margin: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: "Plus Jakarta Sans", sans-serif;
+}
+
+.title {
+    padding: 2rem;
+    text-align: center;
+
+    font-size: clamp(24px, 5vw, 48px);
+}
+
+.title::after {
+    content: "Font-size actual:" attr(data-size);
+    display: block;
+    font-size: 1rem;
+    color: crimson;
+}
+

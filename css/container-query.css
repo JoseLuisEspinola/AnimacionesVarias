@@ -1,0 +1,40 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+.icon {
+    width: min(400px, 100%);
+    margin: 90px auto;
+
+    resize: horizontal;
+    overflow: hidden;
+    container-type: inline-size;
+}
+
+.icon-container {
+    display: grid;
+    justify-items: center;
+    gap: 1rem;
+    border: 1px solid;
+    border-radius: 10px;
+    padding: 1rem;
+}
+
+.icon-name {
+    text-align: center;
+    font-size: clamp(24px, 6vw, 36px);
+}
+
+.icon-img {
+    display: block;
+    width: 80px;
+}
+
+@container (width > 400px) {
+    .icon-container {
+        grid-auto-flow: column;
+        justify-content: space-between;
+        align-items: center;
+    }
+}
