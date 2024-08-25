@@ -1,0 +1,30 @@
+html {
+    width: 80vw;
+    height: 80vh;
+    margin: 0 auto;
+    top: 150px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+
+.tracking-in-expand-forward-top {
+    text-align: center;
+    animation:tracking-in-expand-forward-top 1.4s linear both;
+} 
+
+@keyframes tracking-in-expand-forward-top {
+    0% {
+        letter-spacing:-.2em;
+        transform: translateZ(-700px) translateY(-100px);
+        opacity: 0;
+    }
+    40% {
+        opacity: 0.6;
+    }
+    100% {
+        transform:translateZ(0) translateY(0);
+        opacity: 1;
+    }
+}
