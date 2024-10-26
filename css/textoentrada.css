@@ -11,7 +11,7 @@ html {
 
 .tracking-in-expand-forward-top {
     text-align: center;
-    animation:tracking-in-expand-forward-top 1.4s linear both;
+    animation: tracking-in-expand-forward-top 1.4s linear both;
 } 
 
 @keyframes tracking-in-expand-forward-top {

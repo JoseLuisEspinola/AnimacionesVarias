@@ -1,0 +1,40 @@
+.typing-container {
+    width: 80vw;
+    height: 50vh;
+    text-align: center;
+    margin: 200px auto;
+    border: 2px solid #000;
+
+    overflow:hidden;
+}
+
+.escribe {
+    display: block;
+    font-family: monospace;
+    white-space: nowrap;    /* efecto maquina de escribir */
+    /* white-space: normal; */
+    border-right: 4px solid;
+    width: 264ch;
+    animation: typing 16s steps(264),
+               blink 0.5s infinite step-end alternate;
+    overflow: hidden;
+    word-wrap: break-word;
+    hyphens: manual;
+    /* word-break: break-all; */
+/*     overflow: hidden;
+    overflow-wrap: break-word; */
+    
+}
+
+@keyframes typing {
+    from {
+        width: 0;
+    }
+}
+
+@keyframes blink {
+    50% {
+        border-color: transparent;
+    }
+}
+

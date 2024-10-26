@@ -1,0 +1,22 @@
+.wrapper {
+    margin: 50px auto;
+    /* px IGUALES (alto y ancho), si vamos a mostrar redonda la imagen */
+    width: 700px;
+    height: 500px;
+    background-size: 100% 100%;
+    /* background-image: url(../img/blackwidow.jpg); */
+    box-shadow: 10px 10px 10px rgba(0, 0, 0, 0.25);
+
+    /* el border-radius lo agregue yo */
+    /* border-radius: 50%; */
+
+    animation: BgAnimation 20s linear infinite;
+}
+
+@keyframes BgAnimation {
+    0%   {background-image: url(../img/spiderman.jpg);}
+    30%  {background-image: url(../img/capitanamerica.jpg);}
+    60%  {background-image: url(../img/doctorstrange.jpg);}
+    90%  {background-image: url(../img/ironman.jpg);}
+    100% {background-image: url(../img/spiderman.jpg);}
+}

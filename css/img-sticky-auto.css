@@ -1,0 +1,68 @@
+.section-gallery {
+    margin-top: 50px;
+    display: flex;
+    justify-content: center;
+}
+
+/*  */
+.container-gallery {
+    display: flex;
+    width: 700px;
+    height: 500px;
+
+    line-height: 500px;
+    position: absolute;
+    overflow: hidden;
+}
+
+
+.gallery {
+    width: 700px;
+    height: 500px;
+
+    display: flex;
+    flex-direction: column;
+
+    /* overflow: hidden; */
+    animation: img-vertical 30s linear infinite;
+}
+
+.gallery img {
+    height: 100%;
+    width: 100%;
+    flex-shrink: 0;
+
+    object-fit: cover;
+
+    position: sticky;
+    top: 0;
+}
+
+@keyframes img-vertical {
+     0%  {margin-top: 0;}
+    10%  {margin-top: 0;}
+
+    12%  {margin-top: -500px;}
+    22%  {margin-top: -500px;}
+
+    24%  {margin-top: -1000px;}
+    34%  {margin-top: -1000px;}
+    
+    36%  {margin-top: -1500px;}
+    46%  {margin-top: -1500px;}
+    
+    48%  {margin-top: -2000px;}
+    58%  {margin-top: -2000px;}
+
+    /* Retrocedemos */
+    60%  {margin-top: -1500px;}
+    70%  {margin-top: -1500px;}
+
+    72%  {margin-top: -1000px;}
+    82%  {margin-top: -1000px;}
+
+    84%  {margin-top: -500px;}
+    94%  {margin-top: -500px;}
+
+    96% {margin-top: 0px;}
+}

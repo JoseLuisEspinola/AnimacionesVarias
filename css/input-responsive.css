@@ -1,0 +1,17 @@
+.flex-container {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 12px;
+}
+
+.name {
+    flex: 1 0 120px;  /* primero es el flex-grow */
+}
+
+.email {
+    flex: 1 0 140px;   /* el segundo es flex-basis */
+}
+
+button {
+    flex: 1 0 60px;    /* el tercero es el flex-skrink */
+}

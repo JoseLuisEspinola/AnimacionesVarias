@@ -1,0 +1,20 @@
+.gallery {
+    width: 700px;
+    height: 500px;
+
+    display: flex;
+    flex-direction: column;
+
+    overflow: auto;
+}
+
+.gallery img {
+    height: 100%;
+    width: 100%;
+    flex-shrink: 0;
+
+    object-fit: cover;
+
+    position: sticky;
+    top: 0;
+}

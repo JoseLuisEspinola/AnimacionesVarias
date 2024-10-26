@@ -1,0 +1,77 @@
+.card {
+    width: 90%; /* Cambiado a porcentaje para ser más responsivo */
+    max-width: 400px; /* Máximo ancho para mantener la tarjeta en tamaños grandes */
+    height: 530px;
+    aspect-ratio: 1/1;
+    border-radius: 8px;
+    
+    position: relative;
+
+    margin: 10px auto; /* Centrado automático */
+}
+
+.card .image-box {
+    width: 100%;
+    height: 100%;
+    border-radius: 8px;
+    /* overflow: hidden; */ /* Asegura que la imagen no sobresalga */
+}
+
+.card .image-box img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    object-position: 50% 10%;  /* horizontal, vertical */
+    border-radius: inherit;
+    transition: transform 0.5s ease-in-out; /* Mejora la transición */
+}
+
+.card .content {
+    transform: translateY(-300%);
+}
+
+.content h2,
+.content p {
+    text-align: center;
+    /* opacity: 0; */  /* NO uso opacity, porque ocupa lugar, y el hover se produce ANTES de llegar con el cursor a la imagen */
+    display: none;  
+    transition: opacity 0.4s 0.2s ease, transform 0.4s 0.2s ease; /* Añadido transform a la transición */
+}
+
+.content h2 {
+    color: #ffffff;
+    text-shadow: 2px 2px 5px #070707, 2px 2px 10px #000000;
+    margin-bottom: 12px;
+    transform: scale(0.5); /* Cambiado a transform */
+}
+
+.content p {
+    font-size: 16px;
+    line-height: 1.5;
+    color: #03f3fc;
+    transform: translateY(50%);
+}
+
+.card:hover .image-box img {
+    filter: grayscale(150%);
+    transform: scale(1.05); /* Efecto de zoom al pasar el mouse */
+}
+
+.card:hover .content h2 {
+    transform: scale(1); /* Cambiado a transform */
+    /* opacity: 1; */
+    display: block;
+}
+
+.card:hover .content p {
+    /* opacity: 1; */
+    display: block;
+    transform: translateY(0);
+}
+
+/* Media query para pantallas más pequeñas */
+@media (max-width: 600px) {
+    .card {
+        width: 100%; /* Asegura que la tarjeta ocupe todo el ancho en móviles */
+    }
+}

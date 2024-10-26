@@ -1,0 +1,63 @@
+.card {
+    width: 400px;
+    aspect-ratio: 1/0.7;
+    border-radius: 8px;
+    position: relative;
+    /* cursor: pointer; */
+
+    /* overflow: hidden; */
+}
+
+.card .image-box {
+    width: 100%;
+    height: 100%;
+    border-radius: 8px;
+}
+
+.card .image-box img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    object-position: 50% 90%;
+    border-radius: inherit;
+    transition: 0.5s ease-in-out;
+}
+
+.card .content {
+    transform: translateY(-300%);
+    /* overflow: visible; */
+}
+
+.content h2,
+.content p {
+    text-align: center;
+    opacity: 0;    /* ocultamos el h2 y p */
+    transition: 0.4s 0.2s ease;
+}
+
+.content h2 {
+    color: #fcd603;
+    margin-bottom: 12px;
+    scale: 0.5;
+}
+
+.content p {
+    font-size: 16px;
+    line-height: 1.5;
+    color: #03f3fc;
+    transform: translateY(50%);
+}
+
+.card:hover .image-box img {
+    filter: grayscale(150%);
+}
+
+.card:hover .content h2 {
+    scale: 1;
+    opacity: 1;
+}
+
+.card:hover .content p {
+    opacity: 1;
+    transform: translateY(0);
+}

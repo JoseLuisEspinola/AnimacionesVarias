@@ -1,0 +1,259 @@
+.btn {
+    display: inline-block;
+    padding: .625rem 1.5625rem;
+    border-style: solid;
+    border-width: 1px;
+    margin-left: .3125rem;
+    margin-right: .3125rem;
+    font-size: .9375rem;
+    /* z-index: 1; */
+    font-family: titillium-regular;
+}
+
+/* *************************** */
+.btn1 {
+    background-color: #232322;
+    color: #d4b170;
+    border-color: #d4b170;
+}
+
+.btn1:hover {
+    background-color: #D4B170;
+    color: #736448;
+}
+
+/* *************************** */
+.btn2 {
+    background-color: #1A1A1A;
+    color: #1BC184;
+}
+
+.btn2:hover {
+    background-color: #1BC184;
+    color: #1A392D;
+}
+
+/* *************************** */
+/*** ESTILOS BOTÓN SLIDE TOP ***/
+.ov-btn-slide-top {
+    text-decoration: none;
+
+    background: #fff;
+    color: #4741d7;
+    border: 1px solid #4741d7;
+    padding: 1rem 1.25rem;
+    border-radius: 4px;
+    position: relative;
+    z-index: 1;
+    overflow: hidden;
+    display: inline-block;
+}
+
+.ov-btn-slide-top:hover {
+    color: #fff; /* color de fuente hover */
+}
+
+.ov-btn-slide-top::after {
+    content: "";
+    background: #4741d7; /* color de fondo hover */
+    position: absolute;
+    z-index: -1;
+    padding: 1rem 1.25rem;
+    display: block;
+    left: 0;
+    right: 0;
+    top: -100%;
+    bottom: 100%;
+    -webkit-transition: all 0.35s;
+    transition: all 0.35s;
+}
+
+.ov-btn-slide-top:hover::after {
+    left: 0;
+    right: 0;
+    top: 0;
+    bottom: 0;
+    -webkit-transition: all 0.35s;
+    transition: all 0.35s;
+}
+
+
+/* ****************************** */
+/*** ESTILOS BOTÓN SLIDE BOTTOM ***/
+.ov-btn-slide-bottom {
+    background: #fff;
+    color: #4741d7;
+    border: 1px solid #4741d7;
+    padding: 16px 20px;
+    border-radius: 3px;
+    position: relative;
+    z-index: 1;
+    overflow: hidden;
+    display: inline-block;
+  }
+
+  .ov-btn-slide-bottom:hover {
+    color: #fff;
+  }
+
+  .ov-btn-slide-bottom::after {
+    content: "";
+    background: #4741d7;
+    position: absolute;
+    z-index: -1;
+    padding: 16px 20px;
+    display: block;
+    left: 0;
+    right: 0;
+    top: 100%;
+    bottom: -100%;
+    -webkit-transition: all 0.35s;
+    transition: all 0.35s;
+  }
+
+  .ov-btn-slide-bottom:hover::after {
+    left: 0;
+    right: 0;
+    top: 0;
+    bottom: 0;
+    -webkit-transition: all 0.35s;
+    transition: all 0.35s;
+  }
+
+
+
+/* ***************************** */
+/*** ESTILOS BOTÓN SLIDE CLOSE ***/
+.ov-btn-slide-close {
+    text-decoration: none;
+
+    background: #fff; /* color de fondo */
+    color: #4741d7; /* color de fuente */
+    border: 1px solid #4741d7; /* tamaño y color de borde */
+    padding: 1rem 1.25rem;
+    border-radius: 4px; /* redondear bordes */
+    position: relative;
+    z-index: 1;
+    overflow: hidden;
+    display: inline-block;
+}
+
+.ov-btn-slide-close:before, .ov-btn-slide-close:after {
+    content: "";
+    z-index: -1;
+    position: absolute;
+    width: 50%;
+    height: 100%;
+    top: 0;
+    left: -50%;
+    background-color: #4741d7; /* color de fondo hover */
+    -webkit-transition: all 0.3s ease-in-out;
+    -o-transition: all 0.3s ease-in-out;
+    transition: all 0.3s ease-in-out;
+}
+
+.ov-btn-slide-close:after {
+    left: 100%;
+}
+
+.ov-btn-slide-close:hover {
+    color: #fff; /* color de fuente hover */
+}
+
+.ov-btn-slide-close:hover:before {
+    left: 0;
+}
+
+.ov-btn-slide-close:hover:after {
+    left: 50%;
+}
+
+
+
+/* *************************** */
+/*** ESTILOS BOTÓN GROW BOX ***/
+.ov-btn-grow-box {
+    background: #fff; /* color de fondo */
+    color: #4741d7; /* color de fuente */
+    border: 1px solid #4741d7; /* tamaño y color de borde */
+    padding: 16px 20px;
+    border-radius: 3px; /* redondear bordes */
+    position: relative;
+    z-index: 1;
+    overflow: hidden;
+    display: inline-block;
+}
+
+.ov-btn-grow-box:hover {
+    color: #fff;/* color de fuente hover */
+}
+
+.ov-btn-grow-box::after {
+    content: "";
+    background: #4741d7; /* color de fondo hover */
+    position: absolute;
+    z-index: -1;
+    padding: 16px 20px;
+    display: block;
+    left: 0;
+    right: 0;
+    top: 0;
+    bottom: 0;
+    transform: scale(0, 0);
+    transition: all 0.3s ease;
+}
+
+.ov-btn-grow-box:hover::after {
+    transition: all 0.3s ease-out;
+    transform: scale(1, 1);
+}
+
+
+/* *************************** */
+/*** ESTILOS BOTÓN GROW SKEW ***/
+.ov-btn-grow-skew {
+    background: #fff; /* color de fondo */
+    color: #4741d7; /* color de fuente */
+    border: 2px solid #4741d7; /* tamaño y color de borde */
+    padding: 16px 20px;
+    border-radius: 3px; /* redondear bordes */
+    position: relative;
+    z-index: 1;
+    overflow: hidden;
+    display: inline-block;
+  }
+
+  .ov-btn-grow-skew:hover {
+    color: #fff;/* color de fuente hover */
+  }
+
+  .ov-btn-grow-skew::after {
+    content: "";
+    background: #4741d7; /* color de fondo hover */
+    position: absolute;
+    z-index: -1;
+    padding: 16px 20px;
+    display: block;
+    left: -20%;
+    right: -20%;
+    top: 0;
+    bottom: 0;
+    transform: skewX(-45deg) scale(0, 1);
+    transition: all 0.3s ease;
+  }
+  
+  .ov-btn-grow-skew:hover::after {
+    transition: all 0.3s ease-out;
+    transform: skewX(-45deg) scale(1, 1);
+  }
+
+
+
+
+
+
+
+
+
+
+
